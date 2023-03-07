@@ -67,7 +67,11 @@ var clients = [
 
         "name": "ASPNetCoreMVCOIDC",
         "client_id": "A02MIupRrme3SEK9wyAgEGgWKmX8BFDj",
-        "appType" : "oidc"
+        "appType" : "oidc",
+        "client_metadata" : {
+            "applictionName2" : "asdasdsa"
+        }
+
     },
     {
 
