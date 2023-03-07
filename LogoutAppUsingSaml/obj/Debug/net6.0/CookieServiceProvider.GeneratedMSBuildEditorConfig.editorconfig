@@ -1,0 +1,45 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CookieServiceProvider
+build_property.RootNamespace = CookieServiceProvider
+build_property.ProjectDir = /Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/Pages/LoggedOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9nZ2VkT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-drwo0d51vj

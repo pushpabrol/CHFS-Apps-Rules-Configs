@@ -1,0 +1,99 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="jumbotron">
+    <h1 class="display-4">Logout App Sample</h1>
+
+    @if (User.Identity == null || !User.Identity.IsAuthenticated)
+    {
+        <p><a asp-page-handler="InitiateSingleSignOn" class="btn btn-primary btn-lg">SSO to the Identity Provider</a></p>
+    }
+
+
+    @if (User.Identity != null && User.Identity.IsAuthenticated && Model.Clients != null)
+    {
+        <div class="container">
+            <ul class="fa-ul list-group">
+
+                @foreach (KeyValuePair<string, ClientInfo> kvPair in Model.Clients)
+                {
+                    <li class="list-group-item">
+                        <span class="fa-li"><i id="@kvPair.Value.id" class="fa-solid fa-spinner fa-pulse"></i></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col"><b>App:</b> <span>@kvPair.Value.name</span></div>
+                                <div class="col"><b>Local Logout Url:</b> <span>@kvPair.Value.logoutUrl</span></div>
+                                <div class="col"><b>Local Logout Status:</b><span id="@kvPair.Value.id-text">Pending...</span></div>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                }
+
+
+            </ul>
+        </div>
+    }
+</div>
+
+
+<script language="Javascript">
+
+    window.onload = function () {
+        var instant = Date.now();
+        window.instant = instant;
+            //debugger;
+            // This is a workaround to stop double calling of this with Salesforce
+            if (window.location === window.parent.location) {
+                var complete = 0;
+                var numberofWsFedSalesforceApps = @Model.NoClients;
+                var returnUrl = "/Home/LoggedOut";
+                if (numberofWsFedSalesforceApps > 0) {
+                    var wsFedSalesforceApps = eval(@Html.Raw(Model.ClientsJson));
+                    wsFedSalesforceApps.forEach(data => {
+                        var app = data.Value;
+                        var iframe = document.createElement('iframe');
+                        iframe.style = "display:none";
+                        iframe.id = Date.now() + Math.random();
+                        iframe.onload = function () {
+                            console.log(app.logout_url);
+                            setTimeout(function () {
+                                document.getElementById(app.id).className = "fa-solid fa-check-square";
+                                document.getElementById(app.id + "-text").innerHTML = "<b> Success!!</b>";
+                                if (window.location === window.parent.location) complete++;
+                            }, 500);
+                        };
+
+                        iframe.src = encodeURI(app.logout_url);
+                        document.body.appendChild(iframe);
+                    });
+                }
+                var startTime = Date.now();
+                function checkCompletion() {
+                    if (complete !== numberofWsFedSalesforceApps && Date.now() - startTime <= 5000) {
+                        window.setTimeout(checkCompletion, 500); /* this checks the flag every 100 milliseconds*/
+                    } else {
+                        if (complete === numberofWsFedSalesforceApps) {
+                            if (numberofWsFedSalesforceApps > 0) alert(`You have been logged out of ${complete} out of ${numberofWsFedSalesforceApps} apps`);
+                            window.location = "/Logout?returnUrl=/LoggedOut&returnTo=@Model.returnTo";
+                        }
+                        else {
+                            if (numberofWsFedSalesforceApps > 0) alert(`You have been logged out of ${complete} out of ${numberofWsFedSalesforceApps} apps`);
+                            window.location = "/Logout?returnUrl=/LoggedOut&returnTo=@Model.returnTo";
+
+                        }
+
+                    }
+                }
+                checkCompletion();
+            }
+
+        }
+
+</script>
+

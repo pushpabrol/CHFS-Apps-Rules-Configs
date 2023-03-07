@@ -1,0 +1,14 @@
+{
+    "options": {
+        "import_mode": false,
+        "disable_signup": true,
+        "passwordPolicy": "low",
+        "strategy_version": 2,
+        "requires_username": false,
+        "brute_force_protection": false,
+        "enabledDatabaseCustomization": false
+    },
+    "strategy": "auth0",
+    "name": "chfs-users",
+    "enabled_clients": ["BOe9Utlgslc8TRMxPQWFHkSqFyahZoUP","f7mmLc8c3ll5Qx92QXLCm9tOZM5fmxCg","HijpkRed9iSs75Htd9L2UnlICTWwQjx4","d8JapGgFQDhyMBwcEShrOSO5rzcmxYdC","MYGdwxdeDoBxN6CvgLBqxjauueZYhhAH","A02MIupRrme3SEK9wyAgEGgWKmX8BFDj","LWpHBBoPO78OwZG3QaTS7DQOaRogLoDV","TujsDDTBTEWKtZZAbj4Igtvmp6n7mqQL","2U71BsRzV4tBwLI4DQ3lZCPWYDAWbn6X","nXrRUCOGUvdV9fytJ930ocTK0YovwskD","aWl6xv1D3DhtVQ9eG1VbgvZwWbugM3gO","pbiQwR6hvazlzffVvzigS5M0a6aLf4Is","DB2kjVC3dkvUKzWMPNQjZbjXmdk7yR1k","ZP5JyQcqGIWFv8qSpls8PbwlnxWRUj0t","Tnu5by0LTu8G8Iodh92kNG0HvY94nbT6","8KSDcHXRamHzbM8siSxzRLm78DQph7dm","CAy9jMQlu1VQekmJDMmg4mlh6s3SwIjT"]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "con_5nyGqrIA1XWbi89r",
+    "options": {
+        "scope": "openid profile email address phone",
+        "scripts": {
+            "fetchUserProfile": "function(accessToken, ctx, cb) {\n  console.log(ctx.id_token);\n  var jwt = require('jsonwebtoken');\n  var i = jwt.decode(ctx.id_token);\n  console.log(i); \n  if(i.amr)  i.SessionAMR = i.amr;\n   \n  \n  var userId = i.sub;\n [    'iss',\n      'sub',\n      'aud',\n      'iat',\n      'exp',\n      'at_hash',\n      'nonce',].forEach(x => { if (i.hasOwnProperty(x)) delete i[x]; });\n  var p = {\n    id: userId, ...i,\n  };\n  console.log(p);\n  cb(null, p);\n}",
+            "getLogoutUrl" : "function (query, callback) {\n console.log(query); \n  callback(null, 'the_logout_url');}"
+        },
+        "tokenURL": "https://sso.uat.kog.ky.gov/oauth2/default/v1/token",
+        "client_id": "0oa6zpbckboh6vIQG1d7",
+        "client_secret": "n-PS-LWmwj6JGXdxvoQ0hHNN7Vww_WfF5IpCey2q",
+        "authorizationURL": "https://sso.uat.kog.ky.gov/oauth2/default/v1/authorize"
+    },
+    "strategy": "oauth2",
+    "name": "chfs-okta-oauth2-conn",
+    "is_domain_connection": false,
+    "enabled_clients": [
+        "2U71BsRzV4tBwLI4DQ3lZCPWYDAWbn6X",
+        "3twt37YZj4njNiieRsg31ondizcgPb3c",
+        "8KSDcHXRamHzbM8siSxzRLm78DQph7dm",
+        "A02MIupRrme3SEK9wyAgEGgWKmX8BFDj",
+        "aWl6xv1D3DhtVQ9eG1VbgvZwWbugM3gO",
+        "CAy9jMQlu1VQekmJDMmg4mlh6s3SwIjT",
+        "d8JapGgFQDhyMBwcEShrOSO5rzcmxYdC",
+        "DB2kjVC3dkvUKzWMPNQjZbjXmdk7yR1k",
+        "f7mmLc8c3ll5Qx92QXLCm9tOZM5fmxCg",
+        "HijpkRed9iSs75Htd9L2UnlICTWwQjx4",
+        "LWpHBBoPO78OwZG3QaTS7DQOaRogLoDV",
+        "MYGdwxdeDoBxN6CvgLBqxjauueZYhhAH",
+        "nXrRUCOGUvdV9fytJ930ocTK0YovwskD",
+        "pbiQwR6hvazlzffVvzigS5M0a6aLf4Is",
+        "Tnu5by0LTu8G8Iodh92kNG0HvY94nbT6",
+        "TujsDDTBTEWKtZZAbj4Igtvmp6n7mqQL",
+        "ZP5JyQcqGIWFv8qSpls8PbwlnxWRUj0t"
+    ],
+    "realms": [
+        "chfs-okta-oauth2-conn"
+    ]
+}

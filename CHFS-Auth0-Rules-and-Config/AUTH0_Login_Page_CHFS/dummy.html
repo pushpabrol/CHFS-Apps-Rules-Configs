@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sign In with Auth0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+  
+<body>
+  <script src="https://cdn.auth0.com/js/auth0/9.18/auth0.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+
+      var config = JSON.parse(
+        decodeURIComponent(escape(window.atob('@@config@@')))
+      );
+      //If the application redirecting to this login page is the logout app then break the flow and send to logged out page of the app
+      // Auth0 session is required for the logout app to get the SSO clients so if the session is not there then the logout app should just 
+      // quit and go back indicating logout is done and possibly return back to the calling app
+
+      if(config.clientID === "IC7FiwfHyBYfKAgNLKjxDhBSDRXlrLd2") {
+        debugger;
+        console.warn(`For client id: ${config.clientID} only SSO is supported not an explicit login. This is the logout application. `);
+        var callingApp = (new URL(config.callbackURL)).origin;
+        window.location.replace(`${callingApp}/LoggedOut`);   
+        return;
+      }
+
+      var leeway = config.internalOptions.leeway;
+      if (leeway) {
+        var convertedLeeway = parseInt(leeway);
+      
+        if (!isNaN(convertedLeeway)) {
+          config.internalOptions.leeway = convertedLeeway;
+        }
+      }
+
+      var params = Object.assign({
+        overrides: {
+          __tenant: config.auth0Tenant,
+          __token_issuer: config.authorizationServer.issuer
+        },
+        domain: config.auth0Domain,
+        clientID: config.clientID,
+        redirectUri: config.callbackURL,
+        responseType: 'code'
+      }, config.internalOptions);
+
+      var webAuth = new auth0.WebAuth(params);
+			console.log(config);
+      //debugger;
+      webAuth.authorize({
+          connection: 'chfs-idp'
+        }, function(err) {
+          if (err) displayError(err);
+        });
+       
+     // This should never be called actually
+      function displayError(err) {
+        alert(err.policy || err.description);
+      }
+
+    });
+  </script>
+</body>
+</html>

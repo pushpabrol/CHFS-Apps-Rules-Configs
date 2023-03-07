@@ -1,0 +1,57 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SamlTestApp
+build_property.RootNamespace = SamlTestApp
+build_property.ProjectDir = /Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Home/NotLoggedIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ob3RMb2dnZWRJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Logout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9nb3V0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Logout/Remote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9nb3V0L1JlbW90ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Logout/SignedOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9nb3V0L1NpZ25lZE91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/pushpabrol/CHFS-Samples-WorkingDir/SamlDotNetCoreTestApp2/TestApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qz6squrs7m

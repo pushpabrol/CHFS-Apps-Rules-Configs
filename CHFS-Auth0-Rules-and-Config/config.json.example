@@ -1,0 +1,57 @@
+{
+    "auth0": {
+        "domain": "chfs-samples.us.auth0.com",
+        "mgmtApi": {
+            "id": "BOe9Utlgslc8TRMxPQWFHkSqFyahZoUP",
+            "secret": "...",
+            "audience": "https://chfs-samples.us.auth0.com/api/v2/"
+        },
+        "connection": "chfs-idp"
+    },
+    "ruleConfigs": {
+        "AUTH0_DOMAIN": "chfs-samples.us.auth0.com",
+        "MGMT_CLIENT_ID": "BOe9Utlgslc8TRMxPQWFHkSqFyahZoUP",
+        "MGMT_CLIENT_SECRET": "...",
+        "CHFS_AUTH0_DOMAIN": "chfs-samples.us.auth0.com",
+        "CHFS_API_CREDS_CLIENT_ID": "kBsEAz91ubcCnJPLuFnERdmy303LTTl0",
+        "CHFS_API_CREDS_CLIENT_SECRET": "...",
+        "CHFS_API_AUDIENCE": "https://uat.kog.ky.gov/KOGUserClaimsAPI/",
+        "KOG_API_URI": "https://uat.kog.ky.gov/KOGUserClaimsAPI/V1/userclaims/getuserclaims",
+        "ALLOWED_CLIENTS" : "[\"HijpkRed9iSs75Htd9L2UnlICTWwQjx4\"]",
+        "KOG_ROUTER_PAGE_URL" : "https://uat.kog.ky.gov/account1/RouterPage.aspx",
+        "LOGOUT_APP_CLIENT_ID" : "IC7FiwfHyBYfKAgNLKjxDhBSDRXlrLd2"
+    },
+    "rules": [
+        {
+            "filePath": "./common.js",
+            "name": "common-global-functions",
+            "order": 100
+        },
+        {
+            "filePath": "./addSessionTimeStamp.js",
+            "name": "user-session-timestamp",
+            "order": 101
+        },
+        {
+            "filePath": "./rule-add-session-clients-with-metadata.js",
+            "name": "session-clients-metadata-as-claim-for-logout",
+            "order": 102
+        },
+        {
+            "filePath": "./needkogvisit-api-rule-add-attributes-assertion.js",
+            "name": "needkogvisit-rule-to-add-attributes-from-response",
+            "order": 103
+        }
+    ],
+    "loginPage": {
+        "clientIds": ["HijpkRed9iSs75Htd9L2UnlICTWwQjx4", "d8JapGgFQDhyMBwcEShrOSO5rzcmxYdC","pbiQwR6hvazlzffVvzigS5M0a6aLf4Is"],
+        "filePath": "./AUTH0_Login_Page_CHFS/loginPageTemplate.html",
+        "replacements":
+            [{ "###CLIENT_ID_OF_LOGOUT_APP###" : "abcdef" },{ "###CHFS_CONNECTION_NAME###" : "chfs-idp" } ]
+            
+            
+    },
+    "samlAddons" :[]
+
+
+}

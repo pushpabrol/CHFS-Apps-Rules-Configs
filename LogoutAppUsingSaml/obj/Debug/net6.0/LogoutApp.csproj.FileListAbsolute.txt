@@ -1,0 +1,180 @@
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/appsettings.Development.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/appsettings.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/appsettings.Production.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Certificates/sp.cer
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Certificates/sp.pfx
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/CookieServiceProvider.staticwebassets.runtime.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/CookieServiceProvider
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/CookieServiceProvider.deps.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/CookieServiceProvider.runtimeconfig.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/CookieServiceProvider.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/CookieServiceProvider.pdb
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/ComponentSpace.Saml2.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.AspNetCore.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Extensions.Logging.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Formatting.Compact.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Settings.Configuration.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Sinks.Async.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Sinks.Console.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Sinks.Debug.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/Serilog.Sinks.File.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/System.Security.Cryptography.Xml.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.csproj.AssemblyReference.cache
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.AssemblyInfoInputs.cache
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.AssemblyInfo.cs
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.csproj.CoreCompileInputs.cache
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/CookieServiceProvider.MvcApplicationPartsAssemblyInfo.cache
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.RazorAssemblyInfo.cache
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.RazorAssemblyInfo.cs
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/staticwebassets/msbuild.CookieServiceProvider.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/staticwebassets/msbuild.build.CookieServiceProvider.props
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.CookieServiceProvider.props
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.CookieServiceProvider.props
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/staticwebassets.build.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/staticwebassets.development.json
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/scopedcss/bundle/CookieServiceProvider.styles.css
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/scopedcss/projectbundle/CookieServiceProvider.bundle.scp.css
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.csproj.CopyComplete
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/CookieServiceProvider.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/refint/CookieServiceProvider.dll
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/CookieServiceProvider.pdb
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/LogoutApp.genruntimeconfig.cache
+/Users/pushpabrol/Downloads/SAML for .NET Core/Examples/NET-6.0/SSO/CookieServiceProvider/obj/Debug/net6.0/ref/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/appsettings.Development.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/appsettings.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/appsettings.Production.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Certificates/sp.cer
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Certificates/sp.pfx
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.staticwebassets.runtime.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.deps.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.runtimeconfig.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.pdb
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/ComponentSpace.Saml2.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.AspNetCore.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Extensions.Logging.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Formatting.Compact.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Settings.Configuration.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.Async.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.Console.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.Debug.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.File.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/System.Security.Cryptography.Xml.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.csproj.AssemblyReference.cache
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.AssemblyInfoInputs.cache
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.AssemblyInfo.cs
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.csproj.CoreCompileInputs.cache
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/CookieServiceProvider.MvcApplicationPartsAssemblyInfo.cache
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.RazorAssemblyInfo.cache
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.RazorAssemblyInfo.cs
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.CookieServiceProvider.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.build.CookieServiceProvider.props
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.CookieServiceProvider.props
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.CookieServiceProvider.props
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets.build.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets.development.json
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/scopedcss/bundle/CookieServiceProvider.styles.css
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/scopedcss/projectbundle/CookieServiceProvider.bundle.scp.css
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.csproj.CopyComplete
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/refint/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/CookieServiceProvider.pdb
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.genruntimeconfig.cache
+/Users/pushpabrol/CHFS-Samples/LogoutAppUsingSaml/obj/Debug/net6.0/ref/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/web.config
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/web.config
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/web.config
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/web.config
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/appsettings.Development.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/appsettings.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/appsettings.Production.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/appsettings.Development.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/appsettings.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/appsettings.Production.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/CookieServiceProvider.deps.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/CookieServiceProvider.runtimeconfig.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/appsettings.Development.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/appsettings.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/appsettings.Production.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/CookieServiceProvider.deps.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/CookieServiceProvider.runtimeconfig.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/appsettings.Development.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/appsettings.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/appsettings.Production.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/CookieServiceProvider.deps.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/CookieServiceProvider.runtimeconfig.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/appsettings.Development.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/appsettings.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/appsettings.Production.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/CookieServiceProvider.deps.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/LogoutAppSaml/CookieServiceProvider.runtimeconfig.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Certificates/sp.cer
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Certificates/sp.pfx
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.staticwebassets.runtime.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.deps.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.runtimeconfig.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/CookieServiceProvider.pdb
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/ComponentSpace.Saml2.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.AspNetCore.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Extensions.Logging.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Formatting.Compact.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Settings.Configuration.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.Async.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.Console.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.Debug.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/Serilog.Sinks.File.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/System.Security.Cryptography.Xml.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.csproj.AssemblyReference.cache
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.AssemblyInfoInputs.cache
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.AssemblyInfo.cs
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.csproj.CoreCompileInputs.cache
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/CookieServiceProvider.MvcApplicationPartsAssemblyInfo.cache
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.RazorAssemblyInfo.cache
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.RazorAssemblyInfo.cs
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.CookieServiceProvider.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.build.CookieServiceProvider.props
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.CookieServiceProvider.props
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.CookieServiceProvider.props
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets.build.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/staticwebassets.development.json
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/scopedcss/bundle/CookieServiceProvider.styles.css
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/scopedcss/projectbundle/CookieServiceProvider.bundle.scp.css
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.csproj.CopyComplete
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/refint/CookieServiceProvider.dll
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/CookieServiceProvider.pdb
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/LogoutApp.genruntimeconfig.cache
+/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/obj/Debug/net6.0/ref/CookieServiceProvider.dll

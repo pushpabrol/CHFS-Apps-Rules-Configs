@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>TestApp</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AssemblyName>WsFedApp1</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.IdentityModel.Protocols.WsFederation" />
+    <None Remove="Microsoft.AspNetCore.Authentication.WsFederation" />
+    <None Remove="Views\Logout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.WsFederation" Version="6.26.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.WsFederation" Version="7.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Logout\" />
+  </ItemGroup>
+</Project>

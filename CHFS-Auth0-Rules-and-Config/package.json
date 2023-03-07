@@ -1,0 +1,16 @@
+{
+  "name": "chfs-rules",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "setConfigEntries.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "auth0": "^3.2.0",
+    "commander": "^10.0.0"
+  }
+}

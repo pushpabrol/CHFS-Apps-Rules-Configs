@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{00408B75-B74B-45D3-AAC3-E9A14A0ECF36}|CookieServiceProvider">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/Pages/Index.cshtml.cs" relfile="Pages/Index.cshtml.cs" line="101" column="1" />
+      <Breakpoint file="/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/Pages/Index.cshtml.cs" relfile="Pages/Index.cshtml.cs" line="50" column="1" />
+      <Breakpoint file="/Users/pushpabrol/CHFS-Samples-WorkingDir/LogoutAppUsingSaml/Pages/Index.cshtml.cs" relfile="Pages/Index.cshtml.cs" line="48" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Index.cshtml.cs">
+    <Files>
+      <File FileName="Pages/Index.cshtml.cs" Line="56" Column="33" />
+      <File FileName="Pages/Logout.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/LoggedOut.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Logout.cshtml.cs" Line="12" Column="46" />
+      <File FileName="Pages/LoggedOut.cshtml.cs" Line="16" Column="62" />
+      <File FileName="Pages/Index.cshtml" Line="82" Column="51" />
+      <File FileName="Program.cs" Line="108" Column="34" />
+      <File FileName="appsettings.json" Line="39" Column="26" />
+      <File FileName="appsettings.Production.json" />
+      <File FileName="LogoutAppSaml/appsettings.json" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="Support/SameSiteServiceCollectionExtensions.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LogoutAppSolution" expanded="True">
+            <Node name="LogoutAppUsingSaml" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" expanded="True" />
+                <Node name="LoggedOut.cshtml" expanded="True" />
+                <Node name="Logout.cshtml" expanded="True" />
+              </Node>
+              <Node name="Support" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LogoutAppUsingSaml PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

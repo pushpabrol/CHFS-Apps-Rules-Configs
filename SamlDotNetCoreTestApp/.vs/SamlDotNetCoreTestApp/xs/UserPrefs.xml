@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{425A1A28-15A3-4E09-92B7-AE2936134D15}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SamlTestApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestApp/Views/Logout/SignedOut.cshtml">
+    <Files>
+      <File FileName="TestApp/Program.cs" />
+      <File FileName="TestApp/Properties/launchSettings.json" />
+      <File FileName="TestApp/Controllers/HomeController.cs" />
+      <File FileName="TestApp/Views/_ViewImports.cshtml" />
+      <File FileName="TestApp/Models/ErrorViewModel.cs" />
+      <File FileName="TestApp/appsettings.Development.json" />
+      <File FileName="TestApp/Views/Home/Index.cshtml" />
+      <File FileName="TestApp/appsettings.json" Line="39" Column="58" />
+      <File FileName="TestApp/Controllers/LogoutController.cs" />
+      <File FileName="TestApp/Views/Shared/_Layout.cshtml" />
+      <File FileName="TestApp/Views/Logout/Index.cshtml" />
+      <File FileName="TestApp/Views/Logout/Remote.cshtml" />
+      <File FileName="TestApp/Views/Logout/SignedOut.cshtml" Line="8" Column="7" />
+      <File FileName="TestApp/Views/_ViewStart.cshtml" />
+      <File FileName="TestApp/Controllers/SamlController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SamlDotNetCoreTestApp" expanded="True">
+            <Node name="SamlTestApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Logout" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
