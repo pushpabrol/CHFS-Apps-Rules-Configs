@@ -5,8 +5,7 @@
             "id": "BOe9Utlgslc8TRMxPQWFHkSqFyahZoUP",
             "secret": ###FROM_AUTH0_MGMT_CONSOLE###,
             "audience": "https://chfs-samples.us.auth0.com/api/v2/"
-        },
-        "connection": "chfs-idp"
+        }
     },
     "ruleConfigs": {
         "AUTH0_DOMAIN": "chfs-samples.us.auth0.com",
