@@ -3,11 +3,11 @@
     "options": {
         "scope": "openid profile email address phone",
         "scripts": {
-            "fetchUserProfile": "function(accessToken, ctx, cb) {\n  //console.log(ctx.id_token);\n  var jwt = require('jsonwebtoken');\n  var i = jwt.decode(ctx.id_token);\n  //console.log(\"Fetch Useer Profile script for connection: chfs-okta-oauth2-conn\"); \n  //console.log(\"chfs-okta-oauth2-conn: Decoded id_token contents from Okta: \"); \n  \n\n  if(i.amr) {\n    if(Array.isArray(i.amr))\n    i.SessionAMR = i.amr[0];\n    else i.SessionAMR = i.amr;\n  }\n   \n  console.log(i); \n  \n  var userId = i.sub;\n [    'iss',\n      'sub',\n      'aud',\n      'iat',\n      'exp',\n      'at_hash',\n      'nonce',].forEach(x => { if (i.hasOwnProperty(x)) delete i[x]; });\n  var p = {\n    id: userId, ...i,\n  };\n  //console.log(p);\n  cb(null, p);\n}"
+            "fetchUserProfile": "function(accessToken, ctx, cb) {\n  //console.log(ctx.id_token);\n  var jwt = require('jsonwebtoken');\n  var i = jwt.decode(ctx.id_token);\n  //console.log(\"Fetch Useer Profile script for connection: chfs-okta-oauth2-conn\"); \n  //console.log(\"chfs-okta-oauth2-conn: Decoded id_token contents from Okta: \"); \n  \n\n  if(i.amr) {\n    if(Array.isArray(i.amr))\n    {\n      if(i. amr.findIndex(x => x === \"mfa\") >=0)\n    \t i.SessionAMR = \"mfa\";\n      else i.SessionAMR = \"pwd\";\n    }\n   \n    else i.SessionAMR = i.amr;\n  }\n   \n  console.log(i); \n  \n  var userId = i.sub;\n [    'iss',\n      'sub',\n      'aud',\n      'iat',\n      'exp',\n      'at_hash',\n      'nonce',].forEach(x => { if (i.hasOwnProperty(x)) delete i[x]; });\n  var p = {\n    id: userId, ...i,\n  };\n  //console.log(p);\n  cb(null, p);\n}"
         },
         "tokenURL": "https://sso.uat.kog.ky.gov/oauth2/default/v1/token",
         "client_id": "0oa6zpbckboh6vIQG1d7",
-        "client_secret": ##COPY_SECRET_FROM_OKTA###,
+        "client_secret": ###COPY_SECRET_FROM_OKTA###,
         "upstream_params": {
             "rp-realm": {
                 "alias": "display"
