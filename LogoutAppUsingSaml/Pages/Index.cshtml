@@ -69,6 +69,10 @@
                             }, 500);
                         };
 
+                        iframe.onerror = function () {
+                            console.log("Error loading " + app.logout_url);
+
+                        }
                         iframe.src = encodeURI(app.logout_url);
                         document.body.appendChild(iframe);
                     });
@@ -80,11 +84,11 @@
                     } else {
                         if (complete === numberofWsFedSalesforceApps) {
                             if (numberofWsFedSalesforceApps > 0) alert(`You have been logged out of ${complete} out of ${numberofWsFedSalesforceApps} apps`);
-                            window.location = "/Logout?returnUrl=/LoggedOut&returnTo=@Model.returnTo";
+                            window.location = "@Html.Raw(Model.PostLogoutRedirectUrl)";
                         }
                         else {
                             if (numberofWsFedSalesforceApps > 0) alert(`You have been logged out of ${complete} out of ${numberofWsFedSalesforceApps} apps`);
-                            window.location = "/Logout?returnUrl=/LoggedOut&returnTo=@Model.returnTo";
+                            window.location = "@Html.Raw(Model.PostLogoutRedirectUrl)";
 
                         }
 

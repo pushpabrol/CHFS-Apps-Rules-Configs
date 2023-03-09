@@ -1,7 +1,7 @@
 using ComponentSpace.Saml2;
 using ComponentSpace.Saml2.Authentication;
 using ComponentSpace.Saml2.Session;
-using CookieServiceProvider.Support;
+using LogoutAppUsingSamlServiceProvider.Support;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Serilog;
 
@@ -20,16 +20,6 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
     options.MinimumSameSitePolicy = SameSiteMode.None;
     options.Secure = CookieSecurePolicy.Always;
 
-    options.OnAppendCookie = cookieContext =>
-    {
-        //cookieContext.CookieName = "LogoutAppCookie";
-        //cookieContext.CookieOptions.Expires = System.DateTimeOffset.Now.AddSeconds(40);
-        //cookieContext.CookieOptions.Secure = true;
-        //cookieContext.CookieOptions.MaxAge = System.TimeSpan.FromSeconds(40);
-
-    };
-    //
-
 });
 
 
@@ -41,13 +31,6 @@ builder.Services.ConfigureApplicationCookie(options =>
     // SameSiteMode.None is required to support SAML logout.
     options.Cookie.SameSite = SameSiteMode.None;
 });
-
-//builder.Services.Configure<CookieSsoSessionStoreOptions>(options => {
-//    options.CookieName = "logoutapp-saml-session";
-//    options.CookieOptions.SameSite = ComponentSpace.Saml2.Bindings.CookieOptions.SameSiteMode.None;
-
-//});
-
 
 
 // Add SAML SSO services.
@@ -66,8 +49,8 @@ builder.Services.AddAuthentication(options =>
     options.Cookie.Name = "LogoutAppSaml";
     options.Cookie.SameSite = SameSiteMode.None;
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-    options.Cookie.MaxAge = System.TimeSpan.FromSeconds(10);
-    options.ExpireTimeSpan = System.TimeSpan.FromSeconds(10);
+    options.Cookie.MaxAge = System.TimeSpan.FromSeconds(30);
+    options.ExpireTimeSpan = System.TimeSpan.FromSeconds(30);
 
 
 })
@@ -96,10 +79,11 @@ builder.Services.AddAuthentication(options =>
     {
         OnResolveUrl = (httpContext, samlEndpointType, url) =>
         {
-            Console.WriteLine(httpContext.Request.Query);
-            bool v = httpContext == null || httpContext.Request == null || httpContext.Request.BaseUrl() == null;
+            //Console.WriteLine(httpContext.Request.Query);
+            //bool v = httpContext == null || httpContext.Request == null || httpContext.Request.BaseUrl() == null;
             //var data = Microsoft.AspNetCore.WebUtilities.QueryHelpers.AddQueryString(url, "display", httpContext?.Request?.BaseUrl() ?? "");
-            return Microsoft.AspNetCore.WebUtilities.QueryHelpers.AddQueryString(url, "display", httpContext?.Request?.BaseUrl() ?? "");
+            //return Microsoft.AspNetCore.WebUtilities.QueryHelpers.AddQueryString(url, "display", httpContext?.Request?.BaseUrl() ?? "");
+            return url;
         },
         OnInitiateSso = (httpContext, partnerName, relayState, ssoOptions) =>
         {
@@ -117,7 +101,11 @@ builder.Services.AddAuthentication(options =>
 
 //builder.Services.AddScoped<ISsoSessionStore, CookieSsoSessionStore>();
 
+builder.Services.AddHttpContextAccessor();
+
 var app = builder.Build();
+
+//app.UsePathBase("/LogoutApp");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -126,6 +114,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -146,7 +135,7 @@ public static class HttpRequestExtensions
     public static string BaseUrl(this HttpRequest req)
     {
         if (req == null) return null;
-        var uriBuilder = new UriBuilder(req.Scheme, req.Host.Host, req.Host.Port ?? -1);
+        var uriBuilder = new UriBuilder(req.Scheme, req.Host.Host, req.Host.Port ?? -1,req.PathBase);
         if (uriBuilder.Uri.IsDefaultPort)
         {
             uriBuilder.Port = -1;

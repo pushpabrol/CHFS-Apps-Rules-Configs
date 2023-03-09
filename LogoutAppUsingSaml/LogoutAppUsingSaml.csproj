@@ -7,11 +7,11 @@
     <AssemblyName>CookieServiceProvider</AssemblyName>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'CookieServiceProvider' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>4</WarningLevel>
     <AssemblyName>LogoutAppUsingSaml</AssemblyName>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'LogoutAppUsingSamlServiceProvider' " />
   <ItemGroup>
     <Compile Remove="logs\**" />
     <Content Remove="logs\**" />
@@ -30,6 +30,103 @@
     <Content Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
     <Content Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
     <Content Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Remove="LogoutAppSaml\Serilog.Settings.Configuration.dll" />
+    <None Remove="LogoutAppSaml\Serilog.dll" />
+    <None Remove="LogoutAppSaml\System.Security.Cryptography.Xml.dll" />
+    <None Remove="LogoutAppSaml\Serilog.Sinks.Async.dll" />
+    <None Remove="LogoutAppSaml\System.Security.Cryptography.Pkcs.dll" />
+    <None Remove="LogoutAppSaml\Microsoft.Extensions.DependencyModel.dll" />
+    <None Remove="LogoutAppSaml\Serilog.Sinks.Debug.dll" />
+    <None Remove="LogoutAppSaml\Serilog.Sinks.Console.dll" />
+    <None Remove="LogoutAppSaml\Serilog.Sinks.File.dll" />
+    <None Remove="LogoutAppSaml\ComponentSpace.Saml2.dll" />
+    <None Remove="LogoutAppSaml\Serilog.Extensions.Logging.dll" />
+    <None Remove="LogoutAppSaml\Serilog.Formatting.Compact.dll" />
+    <None Remove="LogoutAppSaml\CookieServiceProvider.dll" />
+    <None Remove="LogoutAppSaml\CookieServiceProvider" />
+    <None Remove="LogoutAppSaml\Newtonsoft.Json.dll" />
+    <None Remove="LogoutAppSaml\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Remove="LogoutAppSaml\Serilog.AspNetCore.dll" />
+    <None Remove="LogoutAppSaml\CookieServiceProvider.pdb" />
+    <None Remove="LogoutAppSaml\Serilog.Extensions.Hosting.dll" />
+    <None Remove="LogoutAppSaml\wwwroot\favicon.ico" />
+    <None Remove="LogoutAppSaml\wwwroot\CookieServiceProvider.styles.css" />
+    <None Remove="LogoutAppSaml\wwwroot\css\site.css" />
+    <None Remove="LogoutAppSaml\wwwroot\js\site.js" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\LICENSE" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Remove="LogoutAppSaml\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Remove="LogoutAppSaml\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll" />
+    <None Remove="LogoutAppSaml\Certificates\sp.pfx" />
+    <None Remove="LogoutAppSaml\Certificates\sp.cer" />
+    <None Remove="LogoutAppSaml\Certificates\Certificates\sp.pfx" />
+    <None Remove="LogoutAppSaml\Certificates\Certificates\sp.cer" />
+    <Content Remove="LogoutAppSaml\appsettings.json" />
+    <Content Remove="LogoutAppSaml\CookieServiceProvider.runtimeconfig.json" />
+    <Content Remove="LogoutAppSaml\appsettings.Development.json" />
+    <Content Remove="LogoutAppSaml\appsettings.Production.json" />
+    <Content Remove="LogoutAppSaml\CookieServiceProvider.deps.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\appsettings.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\CookieServiceProvider.runtimeconfig.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\appsettings.Development.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\appsettings.Production.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\CookieServiceProvider.deps.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\appsettings.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\CookieServiceProvider.runtimeconfig.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\appsettings.Development.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\appsettings.Production.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\CookieServiceProvider.deps.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\appsettings.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\CookieServiceProvider.runtimeconfig.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\appsettings.Development.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\appsettings.Production.json" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\CookieServiceProvider.deps.json" />
+    <Content Remove="LogoutAppSaml\web.config" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\web.config" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\web.config" />
+    <Content Remove="LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\LogoutAppSaml\web.config" />
   </ItemGroup>
 
   <ItemGroup>

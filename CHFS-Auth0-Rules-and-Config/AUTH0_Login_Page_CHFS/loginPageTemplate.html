@@ -11,6 +11,7 @@
   <script src="https://cdn.auth0.com/js/auth0/9.18/auth0.min.js"></script>
   <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
   <script>
+
     window.addEventListener('load', function() {
 
       var config = JSON.parse(
@@ -19,24 +20,15 @@
       //If the application redirecting to this login page is the logout app then break the flow and send to logged out page of the app
       // Auth0 session is required for the logout app to get the SSO clients so if the session is not there then the logout app should just 
       // quit and go back indicating logout is done and possibly return back to the calling app
-
       if(config.clientID === "###CLIENT_ID_OF_LOGOUT_APP###") {
+        //debugger;
         console.warn(`For client id: ${config.clientID} only SSO is supported not an explicit login. This is the logout application. `);
-        var callingApp = (new URL(config.callbackURL)).origin;
-        window.location.replace(`${callingApp}/LoggedOut`);   
+        var logoutAppUrl = (new URL(config.callbackURL)).origin;
+        if(config.callbackURL.includes("/SAML/AssertionConsumerService"))
+        var logoutAppUrl = config.callbackURL.split("/SAML/AssertionConsumerService")[0];
+        window.location.replace(`${logoutAppUrl}/LoggedOut`);   
         return;
       }
-      var leeway = config.internalOptions.leeway;
-      if (leeway) {
-        var convertedLeeway = parseInt(leeway);
-      
-        if (!isNaN(convertedLeeway)) {
-          config.internalOptions.leeway = convertedLeeway;
-        }
-      }
-			console.log(config.internalOptions);
-      config.internalOptions.resource = config.internalOptions.wctx;
-      config.extraParams.resource = config.internalOptions.wctx;
       
       var params = Object.assign({
         overrides: {
@@ -49,10 +41,9 @@
         responseType: 'code'
       }, config.internalOptions);
       var webAuth = new auth0.WebAuth(params);
-      debugger;
+      //debugger;
       webAuth.authorize({
           connection: '###CHFS_CONNECTION_NAME###',
-          "resource": config.internalOptions.wctx
         }, function(err) {
           if (err) displayError(err);
         });

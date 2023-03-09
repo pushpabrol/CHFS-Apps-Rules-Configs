@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace CookieServiceProvider.Pages
+namespace LogoutAppUsingSamlServiceProvider.Pages
 {
     public class LogoutModel : PageModel
     {

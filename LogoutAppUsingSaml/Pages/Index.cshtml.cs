@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 
-namespace CookieServiceProvider.Pages
+namespace LogoutAppUsingSamlServiceProvider.Pages
 {
     [ResponseCache(Location = ResponseCacheLocation.None, Duration = 0, NoStore = true)]
     [Authorize]
@@ -14,12 +15,14 @@ namespace CookieServiceProvider.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private IConfiguration _configuration;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
 
-        public IndexModel(IConfiguration Configuration, ILogger<IndexModel> logger)
+        public IndexModel(IConfiguration Configuration, ILogger<IndexModel> logger, IHttpContextAccessor httpContextAccessor)
         {
             _logger = logger;
             _configuration = Configuration;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public int NoClients { get; private set; }
@@ -27,6 +30,7 @@ namespace CookieServiceProvider.Pages
         public string? ClientsJson { get; set; }
         public string? ClientId { get; private set; }
         public string? BaseUrl { get; private set; }
+        public string? PostLogoutRedirectUrl { get; private set; }
         public string? IssuerDomain { get; private set; }
 
         public string? returnTo { get; set; }
@@ -43,6 +47,8 @@ namespace CookieServiceProvider.Pages
          **/
         public IActionResult OnGet()
         {
+            var baseUrl = _httpContextAccessor.HttpContext?.Request.BaseUrl();
+
             returnTo = String.IsNullOrEmpty(HttpContext.Request.Query["returnTo"]) ? "" : HttpContext.Request.Query["returnTo"];
             string? attemptUpstreamLogout = _configuration["Auth0:AttemptUpStreamIdpLogout"] ?? "N";
             if (attemptUpstreamLogout == "Y")
@@ -51,7 +57,7 @@ namespace CookieServiceProvider.Pages
                 if (String.IsNullOrEmpty(fo))
                 {
                     var upStreamLogoutUrl = _configuration["Auth0:UpStreamIDPLogoutUrl"];
-                    if (!String.IsNullOrEmpty(returnTo)) return Redirect(upStreamLogoutUrl + HttpContext.Request.BaseUrl() + "?fo=" + returnTo);
+                    if (!String.IsNullOrEmpty(returnTo)) return Redirect(upStreamLogoutUrl + baseUrl + "?fo=" + returnTo);
                 }
                 else returnTo = fo;
             }
@@ -69,7 +75,8 @@ namespace CookieServiceProvider.Pages
 
             //String? from = String.IsNullOrEmpty(HttpContext.Request.Query["from"]) ? "" : HttpContext.Request.Query["from"];
             ClientId = _configuration["Auth0:ClientId"] as String;
-            BaseUrl = HttpContext.Request.BaseUrl() + "/";
+            BaseUrl = baseUrl.EndsWith("/") ? baseUrl : baseUrl + "/";
+            PostLogoutRedirectUrl = BaseUrl + "Logout?returnUrl=" + BaseUrl + "LoggedOut&returnTo=" + returnTo;
 
             IssuerDomain = "https://" + _configuration["Auth0:Domain"];
             //Get claim containing wsfed and salesforce clients for custom logout
@@ -96,12 +103,12 @@ namespace CookieServiceProvider.Pages
                         ClientsJson = JsonConvert.SerializeObject(Clients, Formatting.Indented);
                         return Page();
                     }
-                    else return Redirect("/Logout?returnUrl=/LoggedOut&returnTo=" + returnTo);
+                    else return Redirect(PostLogoutRedirectUrl);
                 }
-                else return Redirect("/Logout?returnUrl=/LoggedOut&returnTo=" + returnTo);
+                else return Redirect(PostLogoutRedirectUrl);
 
             }
-            else return Redirect("/Logout?returnUrl=/LoggedOut&returnTo=" + returnTo);
+            else return Redirect(PostLogoutRedirectUrl);
         }
 
         public IActionResult OnGetInitiateSingleSignOn()
