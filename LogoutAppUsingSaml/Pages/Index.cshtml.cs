@@ -26,7 +26,7 @@ namespace LogoutAppUsingSamlServiceProvider.Pages
         }
 
         public int NoClients { get; private set; }
-        public IEnumerable<KeyValuePair<string,ClientInfo>> Clients { get; set; }
+        public IEnumerable<KeyValuePair<string, ClientInfo>> Clients { get; set; }
         public string? ClientsJson { get; set; }
         public string? ClientId { get; private set; }
         public string? BaseUrl { get; private set; }
@@ -34,7 +34,7 @@ namespace LogoutAppUsingSamlServiceProvider.Pages
         public string? IssuerDomain { get; private set; }
 
         public string? returnTo { get; set; }
-        private bool hasWSFedOrSalesforce;
+        //private bool hasWSFedOrSalesforce;
         private string returnToHost = "";
 
         /**
@@ -72,7 +72,6 @@ namespace LogoutAppUsingSamlServiceProvider.Pages
              first anyways at logout. This means if the request is coming from salesforce the step of calling the logout_url is redundant
             */
 
-
             //String? from = String.IsNullOrEmpty(HttpContext.Request.Query["from"]) ? "" : HttpContext.Request.Query["from"];
             ClientId = _configuration["Auth0:ClientId"] as String;
             BaseUrl = baseUrl.EndsWith("/") ? baseUrl : baseUrl + "/";
@@ -93,10 +92,11 @@ namespace LogoutAppUsingSamlServiceProvider.Pages
                     //if(!String.IsNullOrEmpty(from)) clientsData.Remove(from);
 
                     var sfClientToRemove = clientsData.FirstOrDefault(x => x.Value.appType == "salesforce" && !String.IsNullOrEmpty(x.Value.logoutUrl) && new Uri(x.Value.logoutUrl).Host == returnToHost);
-                    if(sfClientToRemove.Key != null) clientsData.Remove(sfClientToRemove.Key);
+                    if (sfClientToRemove.Key != null) clientsData.Remove(sfClientToRemove.Key);
 
-                    hasWSFedOrSalesforce = clientsData.Any(x => x.Value.appType == "wsfed" || x.Value.appType == "salesforce");
-                        Clients = clientsData.Where(x => x.Value.appType == "wsfed" || x.Value.appType == "salesforce");
+                    //hasWSFedOrSalesforce = clientsData.Any(x => x.Value.appType == "wsfed" || x.Value.appType == "salesforce" || x.Value.appType == "oidc");
+                    //Load clients having client_metadata with appType => wsfed, salesforce, oidc and logout_url
+                    Clients = clientsData.Where(x => x.Value.appType == "wsfed" || x.Value.appType == "salesforce" || x.Value.appType == "oidc");
                     NoClients = Clients != null ? Clients.Count() : 0;
                     if (NoClients > 0)
                     {
