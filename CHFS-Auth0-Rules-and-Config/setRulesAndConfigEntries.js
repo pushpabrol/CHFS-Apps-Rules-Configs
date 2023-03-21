@@ -9,7 +9,7 @@ import { Command } from 'commander';
 const program = new Command();
 
 program
-  .requiredOption('-e, --env <type>', 'Either pse-addons or chfs-samples is required to be passed as the env', 'pse-addons')
+  .requiredOption('-e, --env <type>', 'env name, tenant name, default is chfs-samples', 'chfs-samples')
   .option('-a, --all', 'run complete setup')
   .option('-c, --configUpdate', 'Update just the rules config')
   .option('-r, --rules', 'update or create rules and set the config')
@@ -27,7 +27,7 @@ if (Object.keys(options).length === 0) {
   program.help();
 }
 
-var config = require(`./config.pse-addons.json`);
+var config = require(`./config.chfs-samples.json`);
 try {
   config = require(`./config.${options.env}.json`);
 }
